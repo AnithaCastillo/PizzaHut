@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas de PizzaHut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c62828;
+        }
+
+        .buy-option {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entradas de PizzaHut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="views/promociones.html">Promociones</a></li>
+                <li><a href="views/pizza.html">Pizza</a></li>
+                <li><a href="views/postres.html">Postres</a></li>
+                <li><a href="views/menullevar.html">MenuLlevar</a></li>
+                <li><a href="views/entradas.html">Entradas</a></li>
+                <li><a href="views/combos.html">Combos</a></li>
+                <li><a href="views/bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Palitroques</h2>
+            <p>Cumple tus antojos de palitroques. Pídelos con su deliciosa salsa bolognesa a solo $3.00.</p>
+            <img src="../images/entrada1.jpg" alt="Palitroques" height="300" width="350" id="palitroquesImage">
+        </section>
+        <section>
+            <h2>Palitroques rellenos de Loroco</h2>
+            <p>Los palitroques que tanto te gustan, ahora rellenos de loroco, queso crema y queso mozzarella a solo $4.99.</p>
+            <img src="../images/entrada2.jpg" alt="Palitroques rellenos de Loroco" height="300" width="350" id="palitroquesLorocoImage">
+        </section>
+        <section>
+            <h2>Pan De Ajo Supremo</h2>
+            <p>Para esos momentos en los que el hambre no puede esperar a solo $5.00.</p>
+            <img src="../images/entrada3.jpg" alt="Pan De Ajo Supremo" height="300" width="350" id="panAjoImage">
+        </section>
+    </main>
+
+    <div id="buyOption" class="buy-option">
+        <h2>Desea realizar su compra</h2>
+        <button onclick="comprar()">Comprar</button>
+    </div>
+
+    <script>
+        document.getElementById('palitroquesImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('palitroquesLorocoImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('panAjoImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        function comprar() {
+            alert('Entrada comprada con éxito!');
+        }
+    </script>
+</body>
+</html>

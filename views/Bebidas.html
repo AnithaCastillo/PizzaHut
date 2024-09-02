@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas de PizzaHut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c62828;
+        }
+
+        .buy-option {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+             
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bebidas de PizzaHut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="views/promociones.html">Promociones</a></li>
+                <li><a href="views/pizza.html">Pizza</a></li>
+                <li><a href="views/postres.html">Postres</a></li>
+                <li><a href="views/menullevar.html">MenuLlevar</a></li>
+                <li><a href="views/entradas.html">Entradas</a></li>
+                <li><a href="views/combos.html">Combos</a></li>
+                <li><a href="views/bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Pepsi lata</h2>
+            <p>Deliciosa y Refrescante a solo $1.50.</p>
+            <img src="../images/bebida1.jpg" alt="Pepsi lata" height="300" width="350"  id="pepsiImage">
+            <div class="buy-now" id="pepsi-buy-now">Comprar</div>
+        </section>
+        <section>
+            <h2>Mirinda lata</h2>
+            <p>Un sabor delicioso a solo 1.50.</p>
+            <img src="../images/bebida2.jpg" alt="Mirinda lata" height="300" width="350" id="mirindaImage">
+            <div class="buy-now" id="mirinda-buy-now">Comprar</div>
+        </section>
+        <section>
+            <h2>7UP lata</h2>
+            <p>Muy refrescante y muy buena a solo 1.50.</p>
+            <img src="../images/bebida3.jpg" alt="7UP lata" height="300" width="350"  id="sevenUpImage" >
+            <div class="buy-now" id="sevenUp-buy-now">Comprar</div>
+
+        </section>
+        <section>
+            <h2>Batidos</h2>
+            <p>Ahora puedes disfrutar de nuestros deliciosos batidos a solo $4.50.</p>
+            <img src="../images/bebida4.jpg" alt="Batidos" height="300" width="350" id="batidosImage">
+            <div class="buy-now" id="batidos-buy-now">Comprar</div>
+        </section>
+    </main>
+
+    <div id="buyOption" class="buy-option">
+        <h2>Desea realizar su compra</h2>
+        <button onclick="comprar()">Comprar</button>
+    </div>
+
+    <script>
+        document.getElementById('pepsiImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('mirindaImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('sevenUpImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('batidosImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        function comprar() {
+            alert('Bebida comprada con éxito!');
+        }
+    </script>
+</body>
+</html>
+

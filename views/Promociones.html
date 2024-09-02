@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones de PizzaHut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c62828;
+        }
+
+        .buy-option {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Promociones de PizzaHut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="views/promociones.html">Promociones</a></li>
+                <li><a href="views/pizza.html">Pizza</a></li>
+                <li><a href="views/postres.html">Postres</a></li>
+                <li><a href="views/menullevar.html">MenuLlevar</a></li>
+                <li><a href="views/entradas.html">Entradas</a></li>
+                <li><a href="views/combos.html">Combos</a></li>
+                <li><a href="views/bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Triple Pizza</h2>
+            <p>Aprovecha nuestra promoción de tres pizzas solo en PizzaHut a $15.95.</p>
+            <img src="../images/promocion1.jpg" alt="Triple pizza" height="300" width="350" id="triplePizzaImage">
+        </section>
+        <section>
+            <h2>2 X 1</h2>
+            <p>Nuevas Especialidades, pídela a solo $12.95.</p>
+            <img src="../images/promocion2.jpg" alt="2x1" height="300" width="350" id="dosPorUnoImage">
+        </section>
+        <section>
+            <h2>Pizza 4 Estaciones</h2>
+            <p>
+                Pizza 4 Extrema con 16 porciones llenas de ingredientes HASTA LA ORILLA: hawaiana, jamón pepperoni, hongos y carne.
+                ¡Pídela para llevar o a domicilio por solo $14.99!
+                <img src="../images/promocion3.jpg" alt="4 Estaciones" height="300" width="350" id="cuatroEstacionesImage">
+            </p>
+        </section>
+    </main>
+
+    <div id="buyOption" class="buy-option">
+        <h2>Estimado Cliente desea realizar su compra</h2>
+        <button onclick="comprar()">Comprar</button>
+    </div>
+
+    <script>
+        document.getElementById('triplePizzaImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('dosPorUnoImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('cuatroEstacionesImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        function comprar() {
+            alert('¡Gracias por tu compra!');
+            document.getElementById('buyOption').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+

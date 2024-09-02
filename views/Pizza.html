@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaHut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c62828;
+        }
+
+        .buy-option {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PizzaHut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="views/promociones.html">Promociones</a></li>
+                <li><a href="views/pizza.html">Pizza</a></li>
+                <li><a href="views/postres.html">Postres</a></li>
+                <li><a href="views/menullevar.html">MenuLlevar</a></li>
+                <li><a href="views/entradas.html">Entradas</a></li>
+                <li><a href="views/combos.html">Combos</a></li>
+                <li><a href="views/bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Pizza Personal</h2>
+            <p>¡En Pizza Hut disfrutamos el mejor sabor al mejor precio! Pizza Personal Deluxe desde $2.50.</p>
+            <img src="../images/pizza1.jpg" alt="Personal" height="300" width="350" id="personalImage">
+            <div class="buy-now" id="personal-buy-now">Comprar</div>
+        </section>
+        <section>
+            <h2>Pizza Buffalo Chicken</h2>
+            <p>Tiene un sabor delicioso solo lo encuentras en PizzaHut a tan solo $14.99.</p>
+            <img src="../images/pizza2.jpg" alt="Buffalo" height="300" width="350" id="buffaloImage">
+            <div class="buy-now" id="buffalo-buy-now">Comprar</div>
+        </section>
+        <section>
+            <h2>Pizza Hawaiana</h2>
+            <p>Amantes de la pizza Hawaiana a tan solo $14.99.</p>
+            <img src="../images/pizza3.jpg" alt="Hawaiana" height="300" width="350" id="hawaianaImage">
+            <div class="buy-now" id="hawaiana-buy-now">Comprar</div>
+        </section>
+        <section>
+            <h2>Pizza Cuatro Estaciones</h2>
+            <p>Llegó la NUEVA Pizza 4 Extrema llena de ingredientes HASTA LA ORILLA: hawaiana, jamón, pepperoni, Buffalo a solo $14.99.</p>
+            <img src="../images/pizza4.jpg" alt="Cuatro Estaciones" height="300" width="350" id="cuatroEstacionesImage">
+            <div class="buy-now" id="cuatroEstaciones-buy-now">Comprar</div>
+        </section>
+    </main>
+
+    <div id="buyOption" class="buy-option">
+        <h2>Desea Comprar esta Pizza</h2>
+        <button onclick="comprar()">Comprar</button>
+    </div>
+
+    <script>
+        document.getElementById('personalImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('buffaloImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('hawaianaImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        document.getElementById('cuatroEstacionesImage').addEventListener('click', function() {
+            document.getElementById('buyOption').style.display = 'block';
+        });
+
+        function comprar() {
+            alert('Pizza comprada con éxito!');
+        }
+    </script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebidas de PizzaHut</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo1.ico" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,7 +62,55 @@
             padding: 20px;
             border: 1px solid #ccc;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-             
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .contact-section {
+            width: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .contact-section h2 {
+                color: #333;
+            }
+
+            .contact-section p {
+                color: #555;
+            }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #c62828;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #c62828;
+            }
+
     </style>
 </head>
 <body>
@@ -77,6 +126,7 @@
                 <li><a href="Entradas.html">Entradas</a></li>
                 <li><a href="Combos.html">Combos</a></li>
                 <li><a href="Bebidas.html">Bebidas</a></li>
+                <li><a href="Horarios.html">Horarios</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -85,7 +135,7 @@
         <section>
             <h2>Pepsi lata</h2>
             <p>Deliciosa y Refrescante a solo $1.50.</p>
-            <img src="../images/bebida1.jpg" alt="Pepsi lata" height="300" width="350"  id="pepsiImage">
+            <img src="../images/bebida1.jpg" alt="Pepsi lata" height="300" width="350" id="pepsiImage">
             <div class="buy-now" id="pepsi-buy-now">Comprar</div>
         </section>
         <section>
@@ -97,7 +147,7 @@
         <section>
             <h2>7UP lata</h2>
             <p>Muy refrescante y muy buena a solo 1.50.</p>
-            <img src="../images/bebida3.jpg" alt="7UP lata" height="300" width="350"  id="sevenUpImage" >
+            <img src="../images/bebida3.jpg" alt="7UP lata" height="300" width="350" id="sevenUpImage">
             <div class="buy-now" id="sevenUp-buy-now">Comprar</div>
 
         </section>
@@ -107,6 +157,22 @@
             <img src="../images/bebida4.jpg" alt="Batidos" height="300" width="350" id="batidosImage">
             <div class="buy-now" id="batidos-buy-now">Comprar</div>
         </section>
+        <div class="contact-container">
+            <div class="contact-section">
+                <h2>Llámanos</h2>
+                <p>Comunícate con nosotros sera un placer atenderte</p>
+                <p>(503) 2257-7777</p>
+                <p>Contamos con la mejor atención al cliente</p>
+
+            </div>
+            <div class="contact-section">
+                <h2>Chatea ahora</h2>
+                <p>Usa el chat para obtener un mejor servicio y mucho más.</p>
+                <button>Chatear ahora</button>
+                <button>WhatsApp</button>
+                <p>Disponibles todos los dias en Nuestras sucursales El Salvador</p>
+            </div>
+        </div>
     </main>
 
     <div id="buyOption" class="buy-option">

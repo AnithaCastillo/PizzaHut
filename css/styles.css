@@ -252,11 +252,179 @@ h2 {
 .image hover {
     opacity: 0.7;
 }
-/* Entradas */
+/* Contacto */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
+}
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
 
+}
+.input-group{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
 
-                
+}
+h2 {
+    color: #080000;
+    font-size: 35px;
+}
+
+label {
+    color: #080000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #f7d8d8;
+    border:2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}
+.form-txt{
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+ .form-txt{
+     color: #76b28e;
+     font-size:14px;
+     font-weight:600;
+     text-decoration: none;
+ }
+.btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #df2323;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+    .btn hover {
+        background-color: #f05050;
+    }
+    @media(max-width:991px){
+
+        body{
+            padding: 30px;
+        }
+
+        form{
+            padding: 50px 30px;
+            width: 100%;
+        }
+
+        input{
+            padding: 15px;
+        }
+
+        /*Maneras de contactarnos*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .contact-section {
+            width: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .contact-section h2 {
+                color: #333;
+            }
+
+            .contact-section p {
+                color: #555;
+            }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: ##c62828;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #c62828;
+            }
+
+            /*Horarios*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d32f2f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px; /* Aumenta el padding para más espacio */
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0; /* Añade un efecto hover para mejor visualización */
+        }
+
+    }
 
 
 

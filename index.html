@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo1.ico" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,6 +51,54 @@
         h2 {
             color: #c62828;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .contact-section {
+            width: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .contact-section h2 {
+                color: #333;
+            }
+
+            .contact-section p {
+                color: #555;
+            }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #c62828;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #c62828;
+            }
     </style>
 </head>
 <body>
@@ -67,25 +116,34 @@
             <li><a href="views/Entradas.html">Entradas</a></li>
             <li><a href="views/Combos.html">Combos</a></li>
             <li><a href="views/Bebidas.html">Bebidas</a></li>
+            <li><a href="views/Horarios.html">Horarios</a></li>
             <li><a href="views/Contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <section id="menu">
-        <h2>Menú</h2>
-        <p>¡Descubre nuestras deliciosas pizzas!</p>
-    </section>
+
     <section id="about">
         <h2>Sobre Nosotros</h2>
         <p>Pizza Hut es la mejor pizzería del mundo.</p>
+        <img src="images/logo.jpg" alt="Sobre Nosotros" height="auto" width="70%" id="sobreNosotrosImage">
     </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Contáctanos en: contacto@pizzahut.com</p>
-    </section>
-    <video controls width="700">
-        <source src="../assets/pizza.mp4" type="pizza/mp4" />
-    </video>
-    <br />
+
+    <div class="contact-container">
+        <div class="contact-section">
+            <h2>Llámanos</h2>
+            <p>Comunícate con nosotros sera un placer atenderte</p>
+            <p>(503) 2257-7777</p>
+            <p>Contamos con la mejor atención al cliente</p>
+            
+        </div>
+        <div class="contact-section">
+            <h2>Chatea ahora</h2>
+            <p>Usa el chat para obtener un mejor servicio y mucho más.</p>
+            <button>Chatear ahora</button>
+            <button>WhatsApp</button>
+            <p>Disponibles todos los dias en Nuestras sucursales El Salvador</p>
+        </div>
+    </div>
+
     <footer>
         <p>© 2024 Pizza Hut</p>
     </footer>

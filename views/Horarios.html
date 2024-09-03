@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combos de PizzaHut</title>
+    <title>Horarios Pizza Hut El Salvador</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo1.ico" />
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f9f3f3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px; 
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #acb7e8;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -63,6 +98,7 @@
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -110,11 +146,13 @@
             button:hover {
                 background-color: #c62828;
             }
+
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Combos de PizzaHut</h1>
+        <h1> Horarios PizzaHut</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -130,71 +168,69 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>My Box</h2>
-            <p>Incluye mini pizza de jamón + palitroques + soda en lata Pepsi, pídelo a solo $5.99.</p>
-            <img src="../images/combo1.jpg" alt="My Box" height="300" width="350" id="myBoxImage">
-        </section>
-        <section>
-            <h2>Big Party Box</h2>
-            <p>Pedí la nueva Big Party Box y te llevamos 1 Pizza Gigante (12 porciones) + 6 Alitas en la salsa que prefieras + 6 Cinnamon Rolls con Caramelo + 6 NUEVOS Cheese Sticks Jr. por $18.99.</p>
-            <img src="../images/combo2.jpg" alt="Big Party Box" height="300" width="350" id="bigPartyBoxImage">
-        </section>
-        <section>
-            <h2>Bom Box</h2>
-            <p>Es un super combo, pídelo por solo $15.99.</p>
-            <img src="../images/combo3.jpg" alt="Bom Box" height="300" width="350" id="bomBoxImage">
-        </section>
-        <section>
-            <h2>Hut Combo Pizza Loroco</h2>
-            <p>Puede ordenar el Hut Combo de pizza persona de especialidad loroco + 4 palitroques personales + bebida desde $4.99.</p>
-            <img src="../images/combo4.jpg" alt="Hut Combo Pizza Loroco" height="300" width="350" id="hutComboPizzaLorocoImage">
-        </section>
-        <div class="contact-container">
-            <div class="contact-section">
-                <h2>Llámanos</h2>
-                <p>Comunícate con nosotros sera un placer atenderte</p>
-                <p>(503) 2257-7777</p>
-                <p>Contamos con la mejor atención al cliente</p>
+    <h1>Horarios Pizza Hut El Salvador</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Horario de Apertura</th>
+                <th>Horario de Cierre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>10:00 AM</td>
+                <td>10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>10:00 AM</td>
+                <td>10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>10:00 AM</td>
+                <td>10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>10:00 AM</td>
+                <td>10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>10:00 AM</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>10:00 AM</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>10:00 AM</td>
+                <td>10:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="contact-container">
+        <div class="contact-section">
+            <h2>Llámanos</h2>
+            <p>Comunícate con nosotros sera un placer atenderte</p>
+            <p>(503) 2257-7777</p>
+            <p>Contamos con la mejor atención al cliente</p>
 
-            </div>
-            <div class="contact-section">
-                <h2>Chatea ahora</h2>
-                <p>Usa el chat para obtener un mejor servicio y mucho más.</p>
-                <button>Chatear ahora</button>
-                <button>WhatsApp</button>
-                <p>Disponibles todos los dias en Nuestras sucursales El Salvador</p>
-            </div>
         </div>
-    </main>
-
-    <div id="buyOption" class="buy-option">
-        <h2>Estimado Cliente desea realizar su compra</h2>
-        <button onclick="comprar()">Comprar</button>
+        <div class="contact-section">
+            <h2>Chatea ahora</h2>
+            <p>Usa el chat para obtener un mejor servicio y mucho más.</p>
+            <button>Chatear ahora</button>
+            <button>WhatsApp</button>
+            <p>Disponibles todos los dias en Nuestras sucursales El Salvador</p>
+        </div>
     </div>
 
-    <script>
-        document.getElementById('myBoxImage').addEventListener('click', function() {
-            document.getElementById('buyOption').style.display = 'block';
-        });
-
-        document.getElementById('bigPartyBoxImage').addEventListener('click', function() {
-            document.getElementById('buyOption').style.display = 'block';
-        });
-
-        document.getElementById('bomBoxImage').addEventListener('click', function() {
-            document.getElementById('buyOption').style.display = 'block';
-        });
-
-        document.getElementById('hutComboPizzaLorocoImage').addEventListener('click', function() {
-            document.getElementById('buyOption').style.display = 'block';
-        });
-
-        function comprar() {
-            alert('¡Gracias por tu compra!');
-            document.getElementById('buyOption').style.display = 'none';
-        }
-    </script>
 </body>
 </html>

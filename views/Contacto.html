@@ -1,11 +1,205 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo1.ico" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c62828;
+        }
+
+        .buy-option {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            padding: 50px 55px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            width: 340px;
+            background-color: white;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        h2 {
+            color: #080000;
+            font-size: 35px;
+        }
+
+        label {
+            color: #080000;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            padding: 17px 25px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: #f7d8d8;
+            border: 2px solid #F0FAF1;
+            color: #283629;
+            outline: none;
+        }
+
+            input::placeholder, textarea::placeholder {
+                color: #b5cab6;
+            }
+
+        .form-txt {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .form-txt {
+            color: #76b28e;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn {
+            font-size: 16px;
+            color: #FFFFFF;
+            border: 0;
+            border-radius: 25px;
+            background-color: #df2323;
+            box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #f05050;
+            }
+
+        @media(max-width:991px) {
+            body {
+                padding: 30px;
+            }
+
+            form {
+                padding: 50px 30px;
+                width: 100%;
+            }
+
+            input {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Promociones de PizzaHut</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
+                <li><a href="Pizza.html">Pizza</a></li>
+                <li><a href="Postres.html">Postres</a></li>
+                <li><a href="MenuLlevar.html">MenuLlevar</a></li>
+                <li><a href="Entradas.html">Entradas</a></li>
+                <li><a href="Combos.html">Combos</a></li>
+                <li><a href="Bebidas.html">Bebidas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="https://formsubmit.co/ancastill795@email.com" method="POST">
+        <h2>Contacto</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <div class="form.txt">
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+            <input class="btn" type="submit" value="Enviar" />
+
+            <input type="hidden" name="_next" value="http://192.168.162.190" />
+            <input type="hidden" name="_captcha" value="false" />
+
+        </div>
+    </form>
 
 </body>
 </html>
